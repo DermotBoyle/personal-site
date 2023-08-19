@@ -30,10 +30,12 @@ module.exports = {
         showShadow: "showShadow delay-2000 1s ease-in-out forwards",
         logoFadeInOut: "logoFadeInOut 2s ease-in-out forwards",
         showTextDelay: "showTextDelay 3s ease-in forwards",
+        burgerLinesMoveIn: "collapseBurger 2s ease-in forwards"
       },
       variants: {
         fadeIn: ["motion-safe"],
         slideIn: ["motion-safe"],
+        burgerLinesMoveIn: ["motion-safe"]
       },
       keyframes: {
         fadeIn: {

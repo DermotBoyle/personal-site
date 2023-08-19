@@ -27,7 +27,7 @@ const TravelMadridPage = () => {
 
             <section className='flex w-[70vw] md:pt-6 pt-14'>
                 <div className='w-[50%] mb-24'>
-                    <div className='flex mb-6'>
+                    <div className='flex mb-8'>
                         <div>
                             <h3 className='text-xl font-bold'>Tech</h3>
                         </div>

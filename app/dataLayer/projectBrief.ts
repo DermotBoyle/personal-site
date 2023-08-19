@@ -4,6 +4,7 @@ const getProjectBriefs = () =>
 			title: 'Travel Madrid',
 			information: 'Madrid transport iOS mobile app',
 			techUsed: ['Swift', 'SwiftUI', 'Xcode', 'CocoaPods'],
+			link: '/projects/travel-madrid'
 		},
 		{
 			title: 'RemoteNorway.com',
@@ -11,7 +12,7 @@ const getProjectBriefs = () =>
 			techUsed: ['Typescript', 'NextJS', 'AWS'],
 		},
 		{
-			title: 'Holiday booking hybrid mobile app',
+			title: 'Bookster.ai',
 			information: 'A hotel booking mobile app created with React Native',
 			techUsed: ['React Native', 'Expo', 'TypeScript', 'SCSS'],
 		},

@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+'use client'
+import { SideMenuContext } from '@/app/providers/sidemenu';
+import React, { useContext, useEffect } from 'react';
 
-const HamburgerIcon = () => {
+const HamburgerIcon = (): JSX.Element => {
 
-	const [isClicked, setIsClicked] = React.useState(false);
-
+  const {isOpen, setIsOpen} = useContext(SideMenuContext)
   useEffect(() => {
     const lineA = document.querySelector('.lineA')
     const lineB = document.querySelector('.lineB')
@@ -11,11 +12,15 @@ const HamburgerIcon = () => {
     if(lineA?.classList.contains('origin-center') && lineB?.classList.contains('origin-center')){
       lineA.classList.remove('origin-center', 'delay', '1s', 'rotate-45')
       lineB.classList.remove('origin-center', 'delay', '1s', '-rotate-45')
-    } else if(isClicked) {
+    } else if(isOpen) {
         lineA?.classList.add('origin-center', 'rotate-45', '2s', 'ease-in-out', 'forwards')
         lineB?.classList.add('origin-center', '-rotate-45', '4s', 'ease-in-out', 'forwards')
       }
-  }, [isClicked])
+  }, [isOpen])
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <svg
@@ -26,19 +31,19 @@ const HamburgerIcon = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="w-6 h-6 text-white absolute top-4 right-4 cursor-pointer"
-			onClick={() => setIsClicked(!isClicked)}
+      className="w-6 h-6 text-white absolute top-4 right-4 cursor-pointer z-50"
+			onClick={handleClick}
     >
     {/* Hamburger lines */}
 		<line
       className='lineA'
         x1="3"
-        y1={isClicked ? '12' : '6'}
+        y1={isOpen ? '12' : '6'}
         x2="21"
-        y2={isClicked ? '12' : '6'}
+        y2={isOpen ? '12' : '6'}
       ></line>
       <line
-        className={isClicked ? 'hidden' : undefined}
+        className={isOpen ? 'hidden' : undefined}
         x1="3"
         y1="12"
         x2="21"
@@ -47,9 +52,9 @@ const HamburgerIcon = () => {
       <line
       className='lineB'
         x1="3"
-        y1={isClicked ? '12' : '18'}
+        y1={isOpen ? '12' : '18'}
         x2="21"
-        y2={isClicked ? '12' : '18'}
+        y2={isOpen ? '12' : '18'}
       ></line>
     </svg>
   );

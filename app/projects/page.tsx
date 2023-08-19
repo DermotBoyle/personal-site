@@ -5,7 +5,6 @@ import { AnimatedCard } from '../common/components/animatedCard'
 import { useFadeInButtonBorder } from '../hooks/animation/useFadeInButtonBorder'
 import DecorativeTriangle from '../common/components/decorativeTriangle'
 import HamburgerIcon from '../assets/svg/hamburger'
-import SideMenu from '../common/components/sideMenu'
 import getProjectBriefs from '../dataLayer/projectBrief'
 
 const DocumentsPage = () => {
@@ -16,16 +15,14 @@ const DocumentsPage = () => {
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-between px-24'>
-      <nav className='w-5/6 hidden md:block shadow-inner bg-white items-center font-mono text-lg lg:flex'>
+      <nav className='w-5/6 hidden md:block shadow-inner bg-white items-center font-mono text-lg lg:flex justify-end'>
         <Link className='text-black' href={'/'}>
           Home
         </Link>
-        <Link href={'/Projects'} className='text-black ml-10'>
+        <Link href={'/projects'} className='text-black ml-10'>
           Projects
         </Link>
       </nav>
-
-      <SideMenu />
 
       <div className='md:hidden'>
         <HamburgerIcon />
@@ -56,7 +53,7 @@ const DocumentsPage = () => {
                   </div>
                 </div>
                 <div>
-                  <a className='absolute bottom-4 right-4 show-text-delay hover:underline flex mr-0'>
+                  <Link href={mappedItem.link ?? '/'} className='absolute bottom-4 right-4 show-text-delay hover:underline flex mr-0'>
                     Find out more
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -72,7 +69,7 @@ const DocumentsPage = () => {
                         d='M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75'
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <DecorativeTriangle />

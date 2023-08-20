@@ -1,5 +1,5 @@
 'use client'
-import SideMenu from '@/app/common/components/sideMenu';
+import SideMenu from '@/app/common/components/sidemenu/sideMenu';
 import React, { createContext, useState } from 'react';
 
 

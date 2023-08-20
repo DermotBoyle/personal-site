@@ -1,13 +1,7 @@
 import { SideMenuContext } from "@/app/providers/sidemenu"
 import Link from "next/link"
 import { useContext } from "react"
-
-const NAV_PAGES = [
-	{ name: 'Home', path: '/' },
-	{ name: 'Projects', path: '/projects' },
-	{ name: 'About', path: '/about' },
-]
-
+import { NAV_PAGES } from "../../constants"
 
 const SideMenu = () => {
 

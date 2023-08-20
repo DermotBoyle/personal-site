@@ -4,7 +4,6 @@ import { useFadeInSlideIn } from '../hooks/animation/useFadeInSlideIn'
 import { AnimatedCard } from '../common/components/animatedCard'
 import { useFadeInButtonBorder } from '../hooks/animation/useFadeInButtonBorder'
 import DecorativeTriangle from '../common/components/decorativeTriangle'
-import HamburgerIcon from '../assets/svg/hamburger'
 import getProjectBriefs from '../dataLayer/projectBrief'
 
 const DocumentsPage = () => {
@@ -15,18 +14,6 @@ const DocumentsPage = () => {
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-between px-24'>
-      <nav className='w-5/6 hidden md:block shadow-inner bg-white items-center font-mono text-lg lg:flex justify-end'>
-        <Link className='text-black' href={'/'}>
-          Home
-        </Link>
-        <Link href={'/projects'} className='text-black ml-10'>
-          Projects
-        </Link>
-      </nav>
-
-      <div className='md:hidden'>
-        <HamburgerIcon />
-      </div>
 
       <section>
         {staticProjectData &&

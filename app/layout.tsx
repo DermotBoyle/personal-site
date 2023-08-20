@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Playfair_Display, Montserrat } from 'next/font/google'
 import Providers from './providers'
 import { Navbar } from './common/components/navbar'
+import HamburgerIcon from './assets/svg/hamburger'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -31,7 +32,10 @@ export default function RootLayout({
       <body>
         <Providers>
           <Navbar />
-        <div>{children}</div>
+          <div className='md:hidden'>
+            <HamburgerIcon />
+          </div>
+          <div>{children}</div>
         </Providers>
       </body>
     </html>

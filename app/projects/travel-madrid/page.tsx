@@ -1,4 +1,3 @@
-import HamburgerIcon from '@/app/assets/svg/hamburger'
 import Image from 'next/image'
 
 
@@ -84,10 +83,6 @@ const TravelMadridPage = () => {
                 <h3 className='text-xl font-bold mb-2'>Links</h3>
                 <p>Link to github</p>
             </section>
-
-            <div className='md:hidden'>
-                <HamburgerIcon />
-            </div>
         </main>
     )
 }

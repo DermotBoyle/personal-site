@@ -8,6 +8,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'orange-accent': 'rgb(255, 102, 0)',
+        'secondary': 'rgb(128, 128, 128)',
+        'white': 'rgb(255, 255, 255)',
+        'black': 'rgb(0, 0, 0)',
+      },
       borderWidth: {
         'special-width': '0 42.5px 125px 42.5px',
       },
@@ -47,12 +53,12 @@ module.exports = {
           to: { transform: "translateX(0)" },
         },
         borderFadeInWidth: {
-          "0%": { opacity: 0, width: 0, height: '2px' },
-          "100%": { opacity: 1, width: '100%', height: '2px' },
+          "0%": { opacity: 0, width: 0, height: '2px'},
+          "100%": { opacity: 1, width: '100%', height: '2px'},
         },
         borderFadeInHeight: {
-          "0%": { opacity: 0, height: 0, width: '2px' },
-          "100%": { opacity: 1, height: '100%', width: '2px' },
+          "0%": { opacity: 0, height: 0, width: '2px'},
+          "100%": { opacity: 1, height: '100%', width: '2px'},
         },
         showShadow: {
           "0%": { boxShadow: 'none' },

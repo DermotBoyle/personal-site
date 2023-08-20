@@ -1,5 +1,5 @@
 'use client'
-import SideMenu from '@/app/common/components/sidemenu/sideMenu';
+import SideMenu from '@/app/common/components/sidemenu/sidemenu';
 import React, { createContext, useState } from 'react';
 
 
@@ -14,7 +14,7 @@ const SideMenuProvider = ({ children }: { children: React.ReactNode }) => {
     return (
         <SideMenuContext.Provider value={{ isOpen, setIsOpen }}>
             {children}
-            {isOpen && <SideMenu />}
+           <SideMenu />
         </SideMenuContext.Provider>
     )
 }

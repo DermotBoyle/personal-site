@@ -1,4 +1,3 @@
-import { type } from "os"
 import { useEffect } from "react"
 
 // This hook will fade in the element when it is in the viewport ONCE ONLY
@@ -32,8 +31,6 @@ export const useFadeInButtonBorder = () => {
       // Is the element in the viewport?
       if (entry.isIntersecting) {
         console.log(entry.target)
-        // Add the fadeIn class:
-        // entry.target.classList.add('motion-safe:animate-fadeIn')
         if(entry.target.classList.contains('show-on-btn-bd-w-l') || entry.target.classList.contains('show-on-btn-bd-w-r')){
           entry.target.classList.add('motion-safe:animate-borderFadeInWidth')
         } else {

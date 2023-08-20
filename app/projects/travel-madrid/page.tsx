@@ -77,7 +77,7 @@ const TravelMadridPage = () => {
 
             <section className='w-[70vw] md:pt-6 pt-14'>
                 <h3 className='text-xl font-bold mb-2'>Extra info</h3>
-                <p>The main logo and images used in the app are generated using the Midjourney AI app. The idea is to have a beautiful and interesting image for each of the main neighbourhoods of Madrd.</p>
+                <p>The main logo and images used in the app are generated using the Midjourney AI app. The idea is to have a beautiful and interesting image for each of the main neighbourhoods of Madrid.</p>
             </section>
 
             <section className='w-[70vw] md:pt-6 pt-14'>

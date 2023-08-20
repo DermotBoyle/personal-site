@@ -11,32 +11,33 @@ const TravelMadridPage = () => {
                 <div className='my-6 w-[75vw] h-0.5 border-t-0 bg-white' />
             </section>
 
-            <section className='flex w-[70vw] md:pt-6 pt-14'>
-                <div className='w-[50%] mb-24'>
-                    <div className='flex mb-8'>
+            <section className='flex flex-col md:flex-row w-[70vw] pt-6'>
+                <div className='w-[95%] md:w-[50%] mb-8 md:mb-24'>
+                    <div className='flex flex-col md:flex-row mb-8'>
                         <div className='w-24'>
                             <h3 className='text-xl font-bold'>Tech</h3>
                         </div>
-                        <div>
+                        <div className='hidden md:block'>
                             <p>Swift</p>
+                            <p>SwiftUI</p>
                             <p>UIKit</p>
                             <p>MapKit</p>
                             <p>CoreLocation</p>
                             <p>CoreData</p>
-                            <p>SwiftUI</p>
                         </div>
+                        <p className='md:hidden'>Swift, SwiftUI, UIKit, MapKit, CoreLocation, CoreData</p>
                     </div>
 
-                    <div className='flex mb-8'>
+                    <div className='flex flex-col md:flex-row mb-8'>
                         <div className='w-24'>
                             <h3 className='text-xl font-bold'>Year</h3>
                         </div>
-                        <div className='flex'>
-                            <p className='self-end'>2023</p>
+                        <div className='flex flex-col md:flex-row'>
+                            <p className='md:self-end'>2023</p>
                         </div>
                     </div>
 
-                    <div className='flex'>
+                    <div className='flex flex-col md:flex-row'>
                         <div className='w-24'>
                             <h3 className='text-xl font-bold'>Status</h3>
                         </div>
@@ -46,15 +47,15 @@ const TravelMadridPage = () => {
                     </div>
                 </div>
 
-                <div className='w-[50%]'>
+                <div className='w-[70vw]'>
                     <h3 className='text-xl font-bold'>Description</h3>
-                    <p className='mt-4'>Travel Madrid is a native iOS travel app that allows users to plan their journeys using public transport.</p>
+                    <p className='md:mt-4 '>Travel Madrid is a native iOS travel app that allows users to plan their journeys using public transport.</p>
                     <p className='mt-4'>The app uses MapKit to display the map and CoreLocation to get the user's location. The app also uses CoreData to store the user's favourite locations.</p>
                     <p className='mt-4'>Real-time data is supplied by the EMT open api (official transport of Madrid live data)</p>
                 </div>
             </section>
 
-            <div className='w-[70vw]'>
+            <div className='w-[70vw] mt-8 md:mt-0'>
                 <h3 className='text-xl font-bold'>Previews</h3>
             </div>
             <section className='min-w-[50%] grid md:grid-cols-3 md:gap-8 sm:grid-cols-1'>

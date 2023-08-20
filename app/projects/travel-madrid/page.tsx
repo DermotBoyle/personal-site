@@ -17,7 +17,7 @@ const TravelMadridPage = () => {
                         <div className='w-24'>
                             <h3 className='text-xl font-bold'>Tech</h3>
                         </div>
-                        <div className='hidden md:block'>
+                        <div className='hidden md:block mt-1'>
                             <p>Swift</p>
                             <p>SwiftUI</p>
                             <p>UIKit</p>
@@ -47,7 +47,7 @@ const TravelMadridPage = () => {
                     </div>
                 </div>
 
-                <div className='w-[70vw]'>
+                <div className='w-[70vw] md:w-[60vw]'>
                     <h3 className='text-xl font-bold'>Description</h3>
                     <p className='md:mt-4 '>Travel Madrid is a native iOS travel app that allows users to plan their journeys using public transport.</p>
                     <p className='mt-4'>The app uses MapKit to display the map and CoreLocation to get the user's location. The app also uses CoreData to store the user's favourite locations.</p>

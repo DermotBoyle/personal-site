@@ -1,3 +1,8 @@
+'use client'
+import dynamic from "next/dynamic"
+
+
+const CalendlyPopUp = dynamic(() => import("./common/components/Calendly"), { ssr: false, }); // No ssr
 
 export default function Home() {
   return (
@@ -18,6 +23,7 @@ export default function Home() {
         Currently, I'm working on an exciting hybrid mobile and web application project at <b className='text-orange-accent underline underline-offset-4 hover:cursor-pointer'><a rel="noreferrer noopener" target="_blank" href="https://www.weaver.build/">Weaver.</a></b>
         </p>
       </section>
+      <CalendlyPopUp />
     </main>
   )
 }

@@ -7,7 +7,7 @@ const CalendlyPopUp = dynamic(() => import("./common/components/Calendly"), { ss
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-24">
-      <section className="md:w-[45vw] w-[80vw] mt-24 mb-12">
+      <section className="md:w-[45vw] w-[80vw] mt-24 mb-24">
         <p className="text-xl text-secondary">
           Hi, my name is
         </p>

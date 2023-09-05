@@ -28,9 +28,9 @@ export const useFadeInSlideIn = () => {
       // Is the element in the viewport?
       if (entry.isIntersecting) {
         if (entry.target.classList.contains('show-text-delay')) {
-          entry.target.classList.add('motion-safe:animate-showTextDelay')
+          entry.target.classList.add('animate-showTextDelay')
         } else {
-          entry.target.classList.add('motion-safe:animate-fadeIn')
+          entry.target.classList.add('animate-fadeIn')
         }
       }
     })

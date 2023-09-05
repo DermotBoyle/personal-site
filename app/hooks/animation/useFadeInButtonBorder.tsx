@@ -30,7 +30,7 @@ export const useFadeInButtonBorder = () => {
     entries.forEach(entry => {
       // Is the element in the viewport?
       if (entry.isIntersecting) {
-        console.log(entry.target)
+        console.debug(entry.target)
         if(entry.target.classList.contains('show-on-btn-bd-w-l') || entry.target.classList.contains('show-on-btn-bd-w-r')){
           entry.target.classList.add('animate-borderFadeInWidth')
         } else {

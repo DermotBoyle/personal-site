@@ -32,9 +32,9 @@ export const useFadeInButtonBorder = () => {
       if (entry.isIntersecting) {
         console.log(entry.target)
         if(entry.target.classList.contains('show-on-btn-bd-w-l') || entry.target.classList.contains('show-on-btn-bd-w-r')){
-          entry.target.classList.add('motion-safe:animate-borderFadeInWidth')
+          entry.target.classList.add('animate-borderFadeInWidth')
         } else {
-          entry.target.classList.add('motion-safe:animate-borderFadeInHeight')
+          entry.target.classList.add('animate-borderFadeInHeight')
         }
 
       }

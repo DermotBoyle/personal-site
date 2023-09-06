@@ -18,7 +18,7 @@ const AboutPage = () => {
         </ul>
       </section>
 
-      <section className='md:w-[45vw] w-[80vw] mt-12 mb-24'>
+      <section className='relative md:w-[45vw] w-[80vw] mt-12 mb-24'>
         <h3 className='text-2xl font-medium'>Work history</h3>
 
         <ul>
@@ -92,6 +92,7 @@ const AboutPage = () => {
             </div>
           </li>
         </ul>
+        <div className="hidden md:block shadow-2xl shadow-black absolute opacity-30 rounded-full top-[-25vh] right-[-20vw] w-[40vw] h-[40vw] bg-center bg-[url('/images/Dermot_Logo.png')] z-[-1]" />
       </section>
     </main>
   )

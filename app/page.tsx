@@ -21,8 +21,7 @@ export default function Home() {
         <p className="mt-4 text-secondary">
           Currently, I'm working on an exciting hybrid mobile and web application project at <b className='text-orange-accent underline underline-offset-4 hover:cursor-pointer'><a rel="noreferrer noopener" target="_blank" href="https://www.weaver.build/">Weaver.</a></b>
         </p>
-        <div className="hidden md:block shadow-2xl shadow-black absolute opacity-30 rounded-full top-[-2vh] right-[-20vw] w-[40vw] h-[40vw] bg-center bg-[url('/images/Dermot_Logo.png')] z-[-1]">
-        </div>
+        <div className="hidden md:block shadow-2xl shadow-black absolute opacity-30 rounded-full top-[-2vh] right-[-20vw] w-[40vw] h-[40vw] bg-center bg-[url('/images/Dermot_Logo.png')] z-[-1]" />
       </section>
       <CalendlyPopUp />
     </main>

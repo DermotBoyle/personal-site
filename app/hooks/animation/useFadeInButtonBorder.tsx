@@ -36,7 +36,6 @@ export const useFadeInButtonBorder = () => {
         } else {
           entry.target.classList.add('animate-borderFadeInHeight')
         }
-
       }
     })
   }

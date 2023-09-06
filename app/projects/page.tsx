@@ -26,10 +26,10 @@ const DocumentsPage = () => {
               />
               <div>
                 <div className='absolute top-4 left-4'>
-                  <p className='text-left text-[1.5rem] text-slate-300 show-text-delay'>
+                  <p className='text-left text-[1.5rem] text-white show-text-delay'>
                     {mappedItem.title}
                   </p>
-                  <p className='text-left show-text-delay'>
+                  <p className='text-left text-orange-accent show-text-delay'>
                     {mappedItem.information}
                   </p>
                   <div className='text-xs mt-2 text-left text-slate-300 show-text-delay'>
@@ -41,7 +41,7 @@ const DocumentsPage = () => {
                   </div>
                 </div>
                 <div>
-                  <Link href={mappedItem.link ?? '/'} className='absolute bottom-4 right-4 show-text-delay hover:underline flex mr-0'>
+                  <Link href={mappedItem.link ?? '/'} className='absolute text-orange-accent bottom-4 right-4 show-text-delay hover:underline flex mr-0'>
                     Find out more
                     <svg
                       xmlns='http://www.w3.org/2000/svg'

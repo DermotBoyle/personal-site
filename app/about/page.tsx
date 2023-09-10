@@ -29,7 +29,7 @@ const AboutPage = () => {
               <p className='text-xs text-orange-accent font-medium text-center'>(Contract)</p>
             </div>
             <div className='w-[70%]'>
-              <a className='hover:underline underline-offset-2 decoration-2 font-medium' href='https://weaver.build' rel='noopener' target='_blank'>Senior Fullstack engineer <span className='text-orange-accent'>@</span> Weaver</a>
+              <a className='hover:underline underline-offset-2 decoration-2 font-medium' href='https://weaver.build' rel='noopener' target='_blank'>Fullstack engineer <span className='text-orange-accent'>@</span> Weaver</a>
               <p className='text-secondary text-sm'>Remote</p>
               <p className='text-sm'>Technical lead of feature development for mobile and web products in React, NextJS, GraphQl, AWS, Stripe</p>
               <p className='text-sm'>Unit and E2E testing - Storybook, Playwright, Jest</p>

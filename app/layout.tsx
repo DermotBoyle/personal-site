@@ -6,13 +6,13 @@ import { Navbar } from './common/components/navbar'
 import HamburgerIcon from './assets/svg/hamburger'
 
 const playfair = Playfair_Display({
-  subsets: ['latin'],
+  subsets: [ 'latin' ],
   variable: '--font-playfair-display',
   display: 'swap',
 })
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
+  subsets: [ 'latin' ],
   variable: '--font-montserrat',
   display: 'swap',
 })

@@ -67,7 +67,7 @@ const GoyaTwitterBot = () => {
 			<div className='w-[70vw] mt-8 md:mt-0 pb-6'>
 				<h3 className='text-xl font-bold'>Previews</h3>
 			</div>
-			<section className='w-[70vw]  grid md:grid-cols-2 md:gap-8 sm:grid-cols-1 gap-x-2 gap-y-4 sm:px-2 sm:w-[95vw]'>
+			<section className='w-[95vw] grid md:grid-cols-2 md:gap-8 sm:grid-cols-1 gap-x-2 gap-y-4 sm:px-2 md:w-[70vw]'>
 				<div className='col-span-2 w-[100%] h-[27vh] border-2 border-white rounded-md border-solid relative'>
 					<Image src='/images/goya/goya-twitter-banner.png' alt='Twitter profile header' fill />
 				</div>

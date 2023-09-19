@@ -1,6 +1,6 @@
 import GitHubLogo from '@/app/common/components/GitHubLogo'
 import Image from 'next/image'
-import TwitterBanner from './assets/goya/goya-twitter-banner.png'
+import { TwitterLogo } from '@/app/common/components/twitterLogo'
 
 
 const GoyaTwitterBot = () => {
@@ -18,18 +18,15 @@ const GoyaTwitterBot = () => {
 							<h3 className='text-xl font-bold'>Tech</h3>
 						</div>
 						<ul className='hidden md:block mt-1'>
-							< ul>AWS</ ul>
-							< ul>AWS CDK</ul>
-							< ul>Lambda</ ul>
-							< ul>Cloud Formation</ul>
-							< ul>S3</ ul>
-							< ul>EventBridge</ ul>
-							< ul>DynamoDB</ ul>
-							< ul>SecretsManger</ ul>
+							<ul>AWS</ul>
+							<ul>AWS CDK</ul>
+							<ul>Lambda</ul>
+							<ul>Cloud Formation</ul>
+							<ul>S3</ul>
+							<ul>EventBridge</ul>
+							<ul>DynamoDB</ul>
+							<ul>SecretsManger</ul>
 						</ul>
-						<p className='md:hidden'>
-
-						</p>
 					</div>
 
 					<div className='flex flex-col md:flex-row mb-8'>
@@ -97,7 +94,7 @@ const GoyaTwitterBot = () => {
 
 			<section className='w-[70vw] md:pt-6 pt-14 pb-8'>
 				<h3 className='text-xl font-bold mb-2'>Links</h3>
-				<div>
+				<div className='flex'>
 					<p className='hover:font-bold hover:underline'>
 						<a
 							rel='noreferrer'
@@ -105,6 +102,15 @@ const GoyaTwitterBot = () => {
 							href='https://github.com/DermotBoyle/goya_bot'
 						>
 							<GitHubLogo />
+						</a>
+					</p>
+					<p className='hover:font-bold hover:underline text-sm pl-4 self-center'>
+						<a
+							rel='noreferrer'
+							target='_blank'
+							href='https://twitter.com/goya_explained'
+						>
+							<TwitterLogo />
 						</a>
 					</p>
 				</div>

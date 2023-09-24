@@ -3,7 +3,7 @@ const getProjectBriefs = () =>
 		{
 			title: 'Goya Twitter bot',
 			information: 'A Twitter bot that tweets Goya sketches with explanations',
-			techUsed: [ 'Node.js', 'AWS Lambda', 'AWS CloudWatch', 'TypeScript', 'Twitter API' ],
+			techUsed: [ 'AI', 'Node.js', 'AWS Lambda', 'AWS CloudWatch', 'TypeScript', 'Twitter API' ],
 			link: '/projects/goya-twitter-bot'
 		},
 		{

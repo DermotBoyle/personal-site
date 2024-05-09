@@ -4,8 +4,6 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,16 +22,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  }
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-playfair-display);
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair-display);
+  color: rgb(128, 128, 128, 1);
+}
 
-  p {
-    font-family: var(--font-playfair-display);
-  }
+p {
+  font-family: var(--font-playfair-display);
+  color: white;
+}
 
-  .calendly-close-overlay {
-    background-color: #000;
-  }
+li {
+  font-family: var(--font-playfair-display);
+  color: white;
+}
+
+.calendly-close-overlay {
+  background-color: #000;
+}

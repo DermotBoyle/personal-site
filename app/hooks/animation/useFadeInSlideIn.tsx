@@ -21,8 +21,7 @@ export const useFadeInSlideIn = () => {
 
   // Callback for IntersectionObserver
   const callback = function (
-    entries: IntersectionObserverEntry[],
-    observer: IntersectionObserver
+    entries: IntersectionObserverEntry[]
   ) {
     entries.forEach(entry => {
       // Is the element in the viewport?

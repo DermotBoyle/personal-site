@@ -5,7 +5,7 @@ import React, { createContext, useState } from 'react';
 
 const SideMenuContext = createContext({
     isOpen: false,
-    setIsOpen: (isOpen: boolean) => { }
+    setIsOpen: (_isOpen: boolean) => { }
 })
 
 const SideMenuProvider = ({ children }: { children: React.ReactNode }) => {

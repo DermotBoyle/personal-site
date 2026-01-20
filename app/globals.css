@@ -1,6 +1,91 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  /* Custom colors */
+  --color-orange-accent: rgb(255, 102, 0);
+  --color-secondary: rgb(128, 128, 128);
+
+  /* Custom shadows */
+  --shadow-3xl: 0 16px 10px -17px rgba(255, 255, 255, 0.5);
+  --shadow-negative: -1px -1px 10px -2px rgba(255, 255, 255, 0.5);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-10%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes borderFadeInWidth {
+  0% { opacity: 0; width: 0; height: 2px; }
+  100% { opacity: 1; width: 100%; height: 2px; }
+}
+
+@keyframes borderFadeInHeight {
+  0% { opacity: 0; height: 0; width: 2px; }
+  100% { opacity: 1; height: 100%; width: 2px; }
+}
+
+@keyframes showShadow {
+  0% { box-shadow: none; }
+  50% { box-shadow: 10px 10px 48px 22px rgba(247, 242, 247, 1); }
+  100% { box-shadow: 10px 10px 27px -11px rgba(247, 242, 247, 1); }
+}
+
+@keyframes logoFadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes showTextDelay {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes collapseBurger {
+  /* Add your burger animation keyframes here if needed */
+}
+
+/* Animation utility classes (for dynamic class addition via JS) */
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in forwards, slideIn 0.5s ease-in forwards, showShadow 2s ease-in-out forwards, logoFadeInOut 2s ease-in-out forwards;
+}
+
+.animate-borderFadeInHeight {
+  animation: borderFadeInHeight 2s ease-in forwards;
+}
+
+.animate-borderFadeInWidth {
+  animation: borderFadeInWidth 2s ease-in forwards;
+}
+
+.animate-showShadow {
+  animation: showShadow 1s ease-in-out forwards;
+}
+
+.animate-logoFadeInOut {
+  animation: logoFadeInOut 2s ease-in-out forwards;
+}
+
+.animate-showTextDelay {
+  animation: showTextDelay 3s ease-in forwards;
+}
+
+.animate-burgerLinesMoveIn {
+  animation: collapseBurger 2s ease-in forwards;
+}
+
+/* Custom border color utility for triangle effect */
+.border-special-color {
+  border-color: transparent transparent rgb(255, 255, 255) transparent;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

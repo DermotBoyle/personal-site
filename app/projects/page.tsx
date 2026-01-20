@@ -19,7 +19,7 @@ const DocumentsPage = () => {
       <section>
         {staticProjectData &&
           staticProjectData.map((mappedItem, i) => (
-            <AnimatedCard>
+            <AnimatedCard key={i}>
               <div
                 key={i}
                 className="flex flex-col first-of-type:mt-12 items-center justify-center show-on-scroll"

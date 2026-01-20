@@ -14,21 +14,21 @@ export default function Home() {
           Dermot Boyle.
         </h3>
         <h3 className="text-4xl mt-4 text-secondary">
-          I'm a{" "}
+          I&apos;m a{" "}
           <b className="text-orange-accent z-2">
             mobile and web software engineer
           </b>{" "}
           from Derry, Ireland.
         </h3>
         <p className="mt-6 text-secondary">
-          For me, it's all about crafting top-notch products that fit perfectly
+          For me, it&apos;s all about crafting top-notch products that fit perfectly
           for <b className="text-white">start-ups,</b>{" "}
           <b className="text-white">small businesses,</b> and{" "}
-          <b className="text-white">enterprises.</b> I'm a team player,
+          <b className="text-white">enterprises.</b> I&apos;m a team player,
           passionate about making sure every project is a real game-changer.
         </p>
         <p className="mt-4 text-secondary">
-          Currently, I'm part of the E.on energy owned brands{" "}
+          Currently, I&apos;m part of the E.on energy owned brands{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"

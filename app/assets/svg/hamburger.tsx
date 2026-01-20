@@ -2,7 +2,7 @@
 import { SideMenuContext } from '@/app/providers/sidemenu';
 import React, { useContext, useEffect } from 'react';
 
-const HamburgerIcon = (): JSX.Element => {
+const HamburgerIcon = (): React.JSX.Element => {
 
   const { isOpen, setIsOpen } = useContext(SideMenuContext)
   useEffect(() => {

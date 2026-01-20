@@ -1,6 +1,6 @@
 import { useFadeInButtonBorder } from "@/app/hooks/animation/useFadeInButtonBorder";
 
-export const AnimatedCard = (props: any) => {
+export const AnimatedCard = (props: { children: React.ReactNode }) => {
 
 	useFadeInButtonBorder()
 

@@ -4,7 +4,7 @@ import { useEffect } from "react"
 export const useFadeInButtonBorder = () => {
 	useEffect(() => {
     // Get all the elements you want to show on scroll
-    let targets = [
+    const targets = [
     ...document.querySelectorAll('.show-on-btn-bd-w-l'), 
     ...document.querySelectorAll('.show-on-btn-bd-w-r'),
     ...document.querySelectorAll('.show-on-btn-bd-h-t'),
@@ -24,8 +24,7 @@ export const useFadeInButtonBorder = () => {
 
   // Callback for IntersectionObserver
   const callback = function (
-    entries: IntersectionObserverEntry[],
-    observer: IntersectionObserver
+    entries: IntersectionObserverEntry[]
   ) {
     entries.forEach(entry => {
       // Is the element in the viewport?

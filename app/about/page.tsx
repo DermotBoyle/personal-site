@@ -30,7 +30,11 @@ const AboutPage = () => {
         <ul>
           <li className="flex pt-4">
             <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm">2024 - present</p>
+            </div>
+          </li>
+          <li className="flex pt-4">
+            <div className="mr-6 w-[15%] flex flex-col items-start">
+              <p className="text-sm">Jan 2024 - Dec 2025</p>
               <p className="text-xs text-orange-accent font-medium text-center">
                 (Perm)
               </p>
@@ -42,21 +46,26 @@ const AboutPage = () => {
                 rel="noopener"
                 target="_blank"
               >
-                Mobile app engineer{" "}
+                Tech lead & Senior devops engineer{" "}
                 <span className="text-orange-accent">@</span> Essent & Energie
                 Direct (E.on)
               </a>
               <p className="text-secondary text-sm">
                 Den Bosch, The Netherlands
               </p>
-              <p className="text-sm">
-                Technical lead of feature development for the mobile
-                applications of E.on owned brands Essent and Energie Direct with
-                over 1 million users.
+              <p className="text-sm text-orange-accent font-medium">
+                Promoted to Tech Lead (June 2025)
               </p>
               <p className="text-sm">
-                Lead the development of the consent management feature which saw
-                a 10% increase in customer opt-in rates.
+                Tech lead of the mobile applications of E.on owned brands Essent
+                and Energie Direct with over 1 million users.
+              </p>
+              <p className="text-sm">
+                Oversaw team scaling across agile release trains and led the
+                team to achieve WCAG AA certification.
+              </p>
+              <p className="text-sm">
+                Responsible for vendor coordination and technical decisions for feature flags and push notification systems.
               </p>
               <p className="text-sm">
                 Unit and E2E testing - RTL, Jest, Maestro.

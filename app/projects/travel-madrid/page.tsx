@@ -55,7 +55,7 @@ const TravelMadridPage = () => {
           </p>
           <p className='mt-4'>
             The app uses MapKit to display the map and CoreLocation to get the
-            user's location. The app also uses CoreData to store the user's
+            user&apos;s location. The app also uses CoreData to store the user&apos;s
             favourite locations.
           </p>
           <p className='mt-4'>
@@ -83,7 +83,7 @@ const TravelMadridPage = () => {
       <section className='w-[70vw] md:pt-6 pt-14'>
         <h3 className='text-xl font-bold mb-2'>Design</h3>
         <p>
-          Travel Madrid's UI was built mainly with SwiftUI and UIKit. The design
+          Travel Madrid&apos;s UI was built mainly with SwiftUI and UIKit. The design
           system is still a work in progress.
         </p>
       </section>

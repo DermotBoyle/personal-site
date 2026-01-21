@@ -1,9 +1,9 @@
 "use client";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
-const CalendlyPopUp = dynamic(() => import("./common/components/Calendly"), {
-  ssr: false,
-}); // No ssr
+// const CalendlyPopUp = dynamic(() => import("./common/components/Calendly"), {
+//   ssr: false,
+// }); // No ssr
 
 export default function Home() {
   return (
@@ -52,7 +52,7 @@ export default function Home() {
         </p>
         <div className="hidden md:block shadow-2xl shadow-black absolute opacity-30 rounded-full top-[-2vh] right-[-20vw] w-[40vw] h-[40vw] bg-center bg-[url('/images/Dermot_Logo.png')] z-[-1]" />
       </section>
-      <CalendlyPopUp />
+      {/* <CalendlyPopUp /> */}
     </main>
   );
 }

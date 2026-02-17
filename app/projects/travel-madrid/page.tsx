@@ -1,10 +1,33 @@
 import GitHubLogo from '@/app/common/components/GitHubLogo'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const TravelMadridPage = () => {
   return (
     <main className='flex min-h-screen flex-col items-center px-24'>
-      <section className='min-w-[70vw] md:pt-14 pt-24 font-semibold'>
+      <div className="w-[70vw] pt-6 md:pt-8">
+        <Link
+          href="/projects"
+          className="inline-flex items-center gap-2 text-sm text-stone hover:text-terracotta transition-colors duration-200"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="w-4 h-4"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+            />
+          </svg>
+          Projects
+        </Link>
+      </div>
+      <section className='min-w-[70vw] md:pt-14 pt-8 font-semibold'>
         <h1 className='text-2xl'>Travel Madrid</h1>
         <div className='my-6 w-[75vw] h-0.5 border-t-0 bg-charcoal/10' />
       </section>

@@ -90,7 +90,7 @@ const ProjectsPage = () => {
                   </div>
 
                   {/* Arrow */}
-                  <div className="hidden md:flex items-center self-center">
+                  <div className="flex items-center self-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"

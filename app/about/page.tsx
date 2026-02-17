@@ -34,7 +34,7 @@ const AboutPage = () => {
           </li>
           <li className="flex pt-4">
             <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm">Jan 2024 - Dec 2025</p>
+              <p className="text-sm whitespace-nowrap">Jan 2024 -<br />Dec 2025</p>
               <p className="text-xs text-orange-accent font-medium text-center">
                 (Perm)
               </p>
@@ -78,7 +78,7 @@ const AboutPage = () => {
           </li>
           <li className="flex pt-4">
             <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm">Aug 2022 - Dec 2023</p>
+              <p className="text-sm whitespace-nowrap">Aug 2022 -<br />Dec 2023</p>
               <p className="text-xs text-orange-accent font-medium text-center">
                 (Contract)
               </p>
@@ -114,12 +114,12 @@ const AboutPage = () => {
 
           <li className="flex pt-4">
             <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm">Feb 2021 - Aug 2022</p>
+              <p className="text-sm whitespace-nowrap">Feb 2021 -<br />Aug 2022</p>
               <p className="text-xs text-orange-accent font-medium text-center">
                 (Perm)
               </p>
             </div>
-            <div className="col-span-2">
+            <div className="w-[70%]">
               <a
                 className="hover:underline underline-offset-2 decoration-2 font-medium"
                 href="https://adidas.com"
@@ -151,12 +151,12 @@ const AboutPage = () => {
 
           <li className="flex pt-4">
             <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm">Apr 2020 - Feb 2021</p>
+              <p className="text-sm whitespace-nowrap">Apr 2020 -<br />Feb 2021</p>
               <p className="text-xs text-orange-accent font-medium text-center">
                 (Perm)
               </p>
             </div>
-            <div className="col-span-2">
+            <div className="w-[70%]">
               <a
                 className="hover:underline underline-offset-2 decoration-2 font-medium"
                 href="https://fundacionucjc.org/en/teacher-training/"
@@ -185,12 +185,12 @@ const AboutPage = () => {
 
           <li className="flex pt-4">
             <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm">Oct 2019 - Apr 2020</p>
+              <p className="text-sm whitespace-nowrap">Oct 2019 -<br />Apr 2020</p>
               <p className="text-xs text-orange-accent font-medium text-center">
                 (Perm)
               </p>
             </div>
-            <div className="col-span-2">
+            <div className="w-[70%]">
               <a
                 className="hover:underline underline-offset-2 decoration-2 font-medium"
                 href="https://www.linkedin.com/company/arbor-fintech/"

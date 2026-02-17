@@ -1,16 +1,47 @@
 @import "tailwindcss";
 
 @theme {
-  /* Custom colors */
-  --color-orange-accent: rgb(255, 102, 0);
-  --color-secondary: rgb(128, 128, 128);
+  /* ── Malaga Editorial Design System ── */
 
-  /* Custom shadows */
-  --shadow-3xl: 0 16px 10px -17px rgba(255, 255, 255, 0.5);
-  --shadow-negative: -1px -1px 10px -2px rgba(255, 255, 255, 0.5);
+  /* Typography */
+  --font-display: var(--font-playfair-display);
+  --font-body: var(--font-montserrat);
+
+  /* Background */
+  --color-cream: #FAF6F1;
+  --color-cream-deep: #F2EDE6;
+
+  /* Text */
+  --color-charcoal: #2C2825;
+  --color-charcoal-soft: #4A4543;
+
+  /* Accent: Terracotta — clay rooftops of Malaga */
+  --color-terracotta: #C4572A;
+  --color-terracotta-soft: rgba(196, 87, 42, 0.15);
+
+  /* Accent: Mediterranean blue — the sea at dusk */
+  --color-mediterranean: #1B4965;
+
+  /* Accent: Warm sand/gold — afternoon light */
+  --color-sand: #D4A853;
+
+  /* Muted text */
+  --color-stone: #7A7067;
+
+  /* Shadows */
+  --shadow-warm: 0 16px 10px -17px var(--color-terracotta-soft);
+  --shadow-warm-inset: -1px -1px 10px -2px var(--color-terracotta-soft);
+
+  /* Legacy aliases (keep for backward compat until full migration) */
+  --color-orange-accent: var(--color-terracotta);
+  --color-secondary: var(--color-stone);
+  --color-warm-bg: var(--color-cream);
+  --shadow-3xl: var(--shadow-warm);
+  --shadow-negative: var(--shadow-warm-inset);
 }
 
-/* Keyframes for animations */
+/* ── Keyframes ── */
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -33,8 +64,8 @@
 
 @keyframes showShadow {
   0% { box-shadow: none; }
-  50% { box-shadow: 10px 10px 48px 22px rgba(247, 242, 247, 1); }
-  100% { box-shadow: 10px 10px 27px -11px rgba(247, 242, 247, 1); }
+  50% { box-shadow: 10px 10px 48px 22px var(--color-terracotta-soft); }
+  100% { box-shadow: 10px 10px 27px -11px var(--color-terracotta-soft); }
 }
 
 @keyframes logoFadeInOut {
@@ -49,11 +80,27 @@
   100% { opacity: 1; }
 }
 
-@keyframes collapseBurger {
-  /* Add your burger animation keyframes here if needed */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Animation utility classes (for dynamic class addition via JS) */
+@keyframes collapseBurger {
+  /* Burger animation keyframes */
+}
+
+/* ── Animation utilities ── */
+
+.animate-reveal {
+  animation: reveal 0.7s ease-out forwards;
+}
+
 .animate-fadeIn {
   animation: fadeIn 1s ease-in forwards, slideIn 0.5s ease-in forwards, showShadow 2s ease-in-out forwards, logoFadeInOut 2s ease-in-out forwards;
 }
@@ -82,55 +129,44 @@
   animation: collapseBurger 2s ease-in forwards;
 }
 
-/* Custom border color utility for triangle effect */
+/* ── Decorative ── */
+
 .border-special-color {
-  border-color: transparent transparent rgb(255, 255, 255) transparent;
+  border-color: transparent transparent var(--color-charcoal) transparent;
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
-}
+/* ── Base styles ── */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  background-color: var(--color-cream);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--color-charcoal);
+  background-color: var(--color-cream);
+  min-height: 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-playfair-display);
-  color: rgb(128, 128, 128, 1);
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-charcoal-soft);
 }
 
-p {
-  font-family: var(--font-playfair-display);
-  color: white;
+p, span {
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+}
+
+a {
+  font-family: var(--font-body);
+  color: inherit;
 }
 
 li {
-  font-family: var(--font-playfair-display);
-  color: white;
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
 }
 
 .calendly-close-overlay {
-  background-color: #000;
+  background-color: rgba(250, 246, 241, 0.9);
 }

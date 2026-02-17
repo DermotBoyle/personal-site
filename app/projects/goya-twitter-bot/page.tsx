@@ -7,7 +7,7 @@ const GoyaTwitterBot = () => {
     <main className="flex min-h-screen flex-col items-center px-24">
       <section className="min-w-[70vw] md:pt-14 pt-24 font-semibold">
         <h1 className="text-2xl">Goya Twitter/X bot</h1>
-        <div className="my-6 w-[75vw] h-0.5 border-t-0 bg-white" />
+        <div className="my-6 w-[75vw] h-0.5 border-t-0 bg-charcoal/10" />
       </section>
 
       <section className="flex flex-col md:flex-row w-[70vw] pt-6">
@@ -70,21 +70,21 @@ const GoyaTwitterBot = () => {
         <h3 className="text-xl font-bold">Previews</h3>
       </div>
       <section className="w-[95vw] grid md:grid-cols-2 md:gap-8 sm:grid-cols-1 gap-x-2 gap-y-4 sm:px-2 md:w-[70vw]">
-        <div className="col-span-2 w-[100%] h-[27vh] border-2 border-white rounded-md border-solid relative">
+        <div className="col-span-2 w-[100%] h-[27vh] border-2 border-charcoal/10 rounded-md border-solid relative">
           <Image
             src="/images/goya/goya-twitter-banner.png"
             alt="Twitter profile header"
             fill
           />
         </div>
-        <div className="h-[50vh] border-2 border-white rounded-md border-solid relative">
+        <div className="h-[50vh] border-2 border-charcoal/10 rounded-md border-solid relative">
           <Image
             src="/images/goya/goya-twitter-tweet-one.png"
             alt="Twitter tweet snapshot"
             fill
           />
         </div>
-        <div className="h-[50vh] border-2 border-white rounded-md border-solid relative">
+        <div className="h-[50vh] border-2 border-charcoal/10 rounded-md border-solid relative">
           <Image
             src="/images/goya/goya-twitter-tweet-two.png"
             alt="Twitter tweet snapshot"
@@ -109,7 +109,9 @@ const GoyaTwitterBot = () => {
           The integration with the Twitter v2 api comes from the npm package{" "}
           <a
             target="_blank"
+            rel="noreferrer noopener"
             href="https://www.npmjs.com/package/twitter-api-v2"
+            className="text-terracotta font-medium hover:underline underline-offset-4"
           >
             twitter-api-v2
           </a>

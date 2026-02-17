@@ -1,6 +1,12 @@
 const getProjectBriefs = () =>
 	[
 		{
+			title: 'Talk Tarot',
+			information: 'An AI-powered voice tarot reading app with conversational card interpretation',
+			techUsed: [ 'React Native', 'Expo', 'TypeScript', 'Claude AI', 'Deepgram', 'OpenAI TTS', 'Supabase' ],
+			link: '/projects/talk-tarot'
+		},
+		{
 			title: 'Goya Twitter bot',
 			information: 'A Twitter bot that tweets Goya sketches with explanations',
 			techUsed: [ 'AI', 'Node.js', 'AWS Lambda', 'AWS CloudWatch', 'TypeScript', 'Twitter API' ],

@@ -1,220 +1,207 @@
-import React from "react";
+"use client";
+
+import { useEffect } from "react";
+
+const experience = [
+  {
+    period: "2024 — 2025",
+    role: "Tech Lead & Senior Mobile Developer",
+    company: "Essent & Energie Direct",
+    companyUrl: "https://essent.nl",
+    parent: "E.on",
+    location: "Den Bosch, The Netherlands",
+    type: "Perm",
+    highlight: "Promoted to Tech Lead (June 2025)",
+    summary:
+      "Led the mobile platform team at the Netherlands\u2019 largest energy provider, overseeing apps used by millions of households. Transitioned the team from a single delivery squad into a platform supporting multiple Agile Release Trains. Drove the apps to WCAG AA accessibility certification and shipped dynamic energy pricing features that increased user engagement.",
+  },
+  {
+    period: "2022 — 2023",
+    role: "Fullstack Engineer",
+    company: "Weaver",
+    companyUrl: "https://weaver.build",
+    location: "Remote (Spain/UK)",
+    type: "Contract",
+    summary:
+      "Built a dual-sided marketplace connecting homeowners with vetted tradespeople at an early-stage startup. Owned features end-to-end across web (React) and mobile (Ionic), designed serverless infrastructure with AWS CDK, and built GraphQL APIs serving data across both platforms.",
+  },
+  {
+    period: "2021 — 2022",
+    role: "Frontend Engineer",
+    company: "adidas",
+    companyUrl: "https://adidas.com",
+    location: "Zaragoza, Spain",
+    type: "Perm",
+    summary:
+      "Developed Origo, a bespoke sourcing platform enabling adidas designers to price and procure materials from global suppliers. Built data-rich interfaces handling large datasets with AG Grid and managed complex state with Redux Toolkit across a feature-dense enterprise application.",
+  },
+  {
+    period: "2020 — 2021",
+    role: "Lead Mobile Engineer",
+    company: "Ximdex",
+    companyUrl: "https://fundacionucjc.org/en/teacher-training/",
+    location: "Remote (Spain)",
+    type: "Perm",
+    summary:
+      "Led mobile development for an edtech product built for Universidad Camilo Jos\u00e9 Cela. Recruited and led a small engineering team, shipping both mobile and web applications from initial MVP through to deployment.",
+  },
+  {
+    period: "2019 — 2020",
+    role: "Software Developer",
+    company: "Arbor Fintech",
+    companyUrl: "https://www.linkedin.com/company/arbor-fintech/",
+    location: "Madrid, Spain",
+    type: "Perm",
+    summary:
+      "Built a financial wellness app at a seed-stage startup. Developed the mobile application with Ionic and Angular alongside Node.js backend services on AWS, working closely with founders on rapid iteration cycles.",
+  },
+];
+
+const skills = [
+  "Technical Leadership",
+  "React Native",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Swift",
+  "AWS",
+  "Serverless",
+  "Design Systems",
+  "Accessibility",
+  "GraphQL",
+  "Testing",
+];
 
 const AboutPage = () => {
+  useEffect(() => {
+    const targets = document.querySelectorAll(".reveal-on-scroll");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-reveal");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    targets.forEach((target) => {
+      target.classList.add("opacity-0");
+      observer.observe(target);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <main className="flex flex-col items-center px-24 ">
-      <section className="md:w-[45vw] w-[80vw] mt-24">
-        <h3 className="text-2xl font-medium">Core skills</h3>
-        <ul className="marker:text-orange-accent pt-4">
-          <li className="list-disc">Team leader & technical lead</li>
-          <li className="list-disc">Product development - full lifecycle</li>
-          <li className="list-disc">
-            Hybrid and native iOS mobile development
-          </li>
-          <li className="list-disc">Web development</li>
-          <li className="list-disc">UX/UI consultancy</li>
-          <li className="list-disc">Design system development</li>
-          <li className="list-disc">Design tokens</li>
-          <li className="list-disc">Serverless architecture design</li>
-          <li className="list-disc">AWS certified</li>
-          <li className="list-disc">Unit, integration and e2e testing</li>
-          <li className="list-disc">
-            Storybook testing and component development
-          </li>
-        </ul>
-      </section>
+    <main className="min-h-screen">
+      <div className="w-full max-w-5xl mx-auto px-6 md:px-16 pt-24 pb-16">
+        {/* Page header */}
+        <div className="mb-16 reveal-on-scroll">
+          <p className="text-xs tracking-[0.25em] uppercase text-stone mb-4">
+            The Story
+          </p>
+          <h1 className="text-5xl md:text-7xl font-bold text-charcoal tracking-tight">
+            About
+          </h1>
+          <div className="w-14 h-0.5 bg-terracotta mt-6 mb-8" />
+          <p className="text-lg md:text-xl text-stone leading-relaxed max-w-2xl">
+            I started my career in a music classroom. A bachelor&apos;s in music
+            led to teaching, but curiosity pulled me toward code. Over the past
+            six years, I&apos;ve built products at early-stage startups, led
+            engineering at adidas, and now oversee mobile development at
+            Essent — shipping apps to millions of households across the
+            Netherlands.
+          </p>
+          <p className="text-lg md:text-xl text-stone leading-relaxed max-w-2xl mt-4">
+            I live in Málaga, Spain, where I split my time between engineering
+            work and studying flamenco guitar.
+          </p>
+        </div>
 
-      <section className="relative md:w-[45vw] w-[80vw] mt-12 mb-24">
-        <h3 className="text-2xl font-medium">Work history</h3>
+        {/* Experience */}
+        <section className="mb-20 reveal-on-scroll">
+          <p className="text-xs tracking-[0.25em] uppercase text-stone mb-4">
+            Experience
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-charcoal tracking-tight mb-2">
+            Where I&apos;ve Worked
+          </h2>
+          <div className="w-14 h-0.5 bg-terracotta mt-4 mb-8" />
 
-        <ul>
-          <li className="flex pt-4">
-            <div className="mr-6 w-[15%] flex flex-col items-start">
-            </div>
-          </li>
-          <li className="flex pt-4">
-            <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm whitespace-nowrap">Jan 2024 -<br />Dec 2025</p>
-              <p className="text-xs text-orange-accent font-medium text-center">
-                (Perm)
-              </p>
-            </div>
-            <div className="w-[70%]">
-              <a
-                className="hover:underline underline-offset-2 decoration-2 font-medium"
-                href="https://essent.nl"
-                rel="noopener"
-                target="_blank"
-              >
-                Tech lead & Senior mobile developer{" "}
-                <span className="text-orange-accent">@</span> Essent & Energie
-                Direct (E.on)
-              </a>
-              <p className="text-secondary text-sm">
-                Den Bosch, The Netherlands
-              </p>
-              <p className="text-sm text-orange-accent font-medium">
-                Promoted to Tech Lead (June 2025)
-              </p>
-              <p className="text-sm">
-                Tech lead of the mobile platform team at Essent, the Netherlands&apos; largest energy provider, overseeing customer-facing apps used by millions of households.
-              </p>
-              <p className="text-sm">
-                Transitioned the mobile team from a single delivery squad into a platform team supporting multiple Agile Release Trains.
-              </p>
-              <p className="text-sm">
-                Drove the apps to WCAG AA accessibility certification, ensuring compliance with European accessibility standards.
-              </p>
-              <p className="text-sm">
-                Led development of dynamic energy pricing charts and personalised marketing banners increasing user engagement and conversion rates.
-              </p>
-              <p className="text-sm">
-                Integrated LaunchDarkly (feature flags) & OneSignal (push notifications & in-app messaging).
-              </p>
-              <p className="text-sm">
-                Unit and E2E testing - RTL, Jest, Maestro.
-              </p>
-            </div>
-          </li>
-          <li className="flex pt-4">
-            <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm whitespace-nowrap">Aug 2022 -<br />Dec 2023</p>
-              <p className="text-xs text-orange-accent font-medium text-center">
-                (Contract)
-              </p>
-            </div>
-            <div className="w-[70%]">
-              <a
-                className="hover:underline underline-offset-2 decoration-2 font-medium"
-                href="https://weaver.build"
-                rel="noopener"
-                target="_blank"
-              >
-                Fullstack engineer <span className="text-orange-accent">@</span>{" "}
-                Weaver
-              </a>
-              <p className="text-secondary text-sm">Remote (Spain/UK)</p>
-              <p className="text-sm">
-                Built a dual-sided marketplace connecting homeowners with vetted tradespeople at an early-stage startup.
-              </p>
-              <p className="text-sm">
-                Developed web (React) and mobile (Ionic) applications end-to-end, owning features from business requirements through to user-facing delivery.
-              </p>
-              <p className="text-sm">
-                Designed and implemented serverless backend infrastructure using AWS CDK and Node.js.
-              </p>
-              <p className="text-sm">
-                Built GraphQL APIs to serve data efficiently across web and mobile clients.
-              </p>
-              <p className="text-sm">
-                Unit and E2E testing - Storybook, Playwright, Jest
-              </p>
-            </div>
-          </li>
+          <div>
+            {experience.map((role, i) => (
+              <div key={i} className="reveal-on-scroll">
+                <div className="h-px bg-charcoal/10" />
+                <div className="py-8 md:py-10 grid md:grid-cols-[12rem_1fr] gap-4 md:gap-10">
+                  {/* Date column */}
+                  <div>
+                    <p className="text-sm text-stone whitespace-nowrap">
+                      {role.period}
+                    </p>
+                    <p className="text-xs text-terracotta font-medium mt-1">
+                      {role.type}
+                    </p>
+                  </div>
 
-          <li className="flex pt-4">
-            <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm whitespace-nowrap">Feb 2021 -<br />Aug 2022</p>
-              <p className="text-xs text-orange-accent font-medium text-center">
-                (Perm)
-              </p>
-            </div>
-            <div className="w-[70%]">
-              <a
-                className="hover:underline underline-offset-2 decoration-2 font-medium"
-                href="https://adidas.com"
-                rel="noopener"
-                target="_blank"
-              >
-                Frontend engineer <span className="text-orange-accent">@</span>{" "}
-                adidas
-              </a>
-              <p className="text-secondary text-sm">Zaragoza, Spain</p>
-              <p className="text-sm">
-                Developed Origo, a bespoke sourcing platform enabling adidas designers to price and procure materials from global suppliers.
-              </p>
-              <p className="text-sm">
-                Built complex data-rich interfaces using AG Grid to handle large datasets across materials, pricing, and supplier information.
-              </p>
-              <p className="text-sm">
-                Managed application state with Redux Toolkit, ensuring predictable data flow across a feature-dense enterprise application.
-              </p>
-              <p className="text-sm">
-                Collaborated with cross-functional teams including designers and supply chain stakeholders.
-              </p>
-              <p className="text-sm">
-                Unit and Integration testing - Storybook, Jest, React testing
-                library
-              </p>
-            </div>
-          </li>
+                  {/* Content column */}
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-bold text-charcoal mb-1">
+                      {role.role}
+                    </h3>
+                    <p className="mb-1">
+                      <a
+                        href={role.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-terracotta font-medium hover:underline underline-offset-4"
+                      >
+                        {role.company}
+                      </a>
+                      {role.parent && (
+                        <span className="text-stone"> ({role.parent})</span>
+                      )}
+                    </p>
+                    <p className="text-sm text-stone mb-3">{role.location}</p>
+                    {role.highlight && (
+                      <p className="text-sm text-terracotta font-medium mb-3">
+                        {role.highlight}
+                      </p>
+                    )}
+                    <p className="text-sm text-charcoal-soft leading-relaxed">
+                      {role.summary}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+            <div className="h-px bg-charcoal/10" />
+          </div>
+        </section>
 
-          <li className="flex pt-4">
-            <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm whitespace-nowrap">Apr 2020 -<br />Feb 2021</p>
-              <p className="text-xs text-orange-accent font-medium text-center">
-                (Perm)
-              </p>
-            </div>
-            <div className="w-[70%]">
-              <a
-                className="hover:underline underline-offset-2 decoration-2 font-medium"
-                href="https://fundacionucjc.org/en/teacher-training/"
-                rel="noopener"
-                target="_blank"
+        {/* Skills */}
+        <section className="reveal-on-scroll">
+          <p className="text-xs tracking-[0.25em] uppercase text-stone mb-4">
+            Toolkit
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-charcoal tracking-tight mb-2">
+            What I Work With
+          </h2>
+          <div className="w-14 h-0.5 bg-terracotta mt-4 mb-8" />
+          <div className="flex flex-wrap gap-3">
+            {skills.map((skill, i) => (
+              <span
+                key={i}
+                className="text-sm text-charcoal-soft border border-charcoal/10 px-4 py-2 rounded-sm"
               >
-                Lead mobile engineer <span className="text-orange-accent">@</span>{" "}
-                Ximdex
-              </a>
-              <p className="text-secondary text-sm">Remote (Spain)</p>
-              <p className="text-sm">
-                Led mobile development for an edtech product built for Universidad Camilo José Cela in Madrid.
-              </p>
-              <p className="text-sm">
-                Recruited and led a small engineering team, taking the project from initial MVP through to first deployment.
-              </p>
-              <p className="text-sm">
-                Delivered both mobile and web applications, transforming early prototypes into a robust, user-ready solution.
-              </p>
-              <p className="text-sm">
-                Design system development with CSS-in-JS
-              </p>
-              <p className="text-sm">Unit testing - Jest</p>
-            </div>
-          </li>
-
-          <li className="flex pt-4">
-            <div className="mr-6 w-[15%] flex flex-col items-start">
-              <p className="text-sm whitespace-nowrap">Oct 2019 -<br />Apr 2020</p>
-              <p className="text-xs text-orange-accent font-medium text-center">
-                (Perm)
-              </p>
-            </div>
-            <div className="w-[70%]">
-              <a
-                className="hover:underline underline-offset-2 decoration-2 font-medium"
-                href="https://www.linkedin.com/company/arbor-fintech/"
-                rel="noopener"
-                target="_blank"
-              >
-                Software developer <span className="text-orange-accent">@</span>{" "}
-                Arbor Fintech (defunct)
-              </a>
-              <p className="text-secondary text-sm">Madrid, Spain</p>
-              <p className="text-sm">
-                Helped build a financial wellness app at a seed-stage fintech startup.
-              </p>
-              <p className="text-sm">
-                Developed the mobile application using Ionic and Angular, alongside Node.js backend services deployed on AWS.
-              </p>
-              <p className="text-sm">
-                Worked closely with founders on rapid iteration cycles, taking ownership across the full stack.
-              </p>
-            </div>
-          </li>
-        </ul>
-        <div className="hidden md:block shadow-2xl shadow-black absolute opacity-30 rounded-full top-[-25vh] right-[-20vw] w-[40vw] h-[40vw] bg-center bg-[url('/images/Dermot_Logo.png')] z-[-1]" />
-      </section>
+                {skill}
+              </span>
+            ))}
+          </div>
+        </section>
+      </div>
     </main>
   );
 };

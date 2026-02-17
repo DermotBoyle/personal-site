@@ -6,7 +6,7 @@ const TravelMadridPage = () => {
     <main className='flex min-h-screen flex-col items-center px-24'>
       <section className='min-w-[70vw] md:pt-14 pt-24 font-semibold'>
         <h1 className='text-2xl'>Travel Madrid</h1>
-        <div className='my-6 w-[75vw] h-0.5 border-t-0 bg-white' />
+        <div className='my-6 w-[75vw] h-0.5 border-t-0 bg-charcoal/10' />
       </section>
 
       <section className='flex flex-col md:flex-row w-[70vw] pt-6'>

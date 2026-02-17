@@ -31,7 +31,7 @@ const HamburgerIcon = (): React.JSX.Element => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="w-6 h-6 text-white absolute top-4 right-4 cursor-pointer z-50"
+      className="w-6 h-6 text-charcoal-soft absolute top-4 right-4 cursor-pointer z-50"
       onClick={handleClick}
     >
       {/* Hamburger lines */}

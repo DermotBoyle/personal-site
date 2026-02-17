@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.className} ${montserrat.className}`}>
-      <body className="bg-black">
+      <body>
         <Providers>
           <Navbar />
           <div className="md:hidden">

@@ -1,58 +1,98 @@
-"use client";
-// import dynamic from "next/dynamic";
-
-// const CalendlyPopUp = dynamic(() => import("./common/components/Calendly"), {
-//   ssr: false,
-// }); // No ssr
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-24">
-      <section className="md:w-[45vw] w-[80vw] mt-24 mb-24 relative min-h-fit">
-        <p className="text-xl text-secondary">Hi, my name is</p>
-        <h3 className="text-4xl mt-4 font-semibold text-white">
-          Dermot Boyle.
-        </h3>
-        <h3 className="text-4xl mt-4 text-secondary">
-          I&apos;m a{" "}
-          <b className="text-orange-accent z-2">
-            mobile and web software engineer
-          </b>{" "}
-          from Derry, Ireland.
-        </h3>
-        <p className="mt-6 text-secondary">
-          For me, it&apos;s all about crafting top-notch products that fit perfectly
-          for <b className="text-white">start-ups,</b>{" "}
-          <b className="text-white">small businesses,</b> and{" "}
-          <b className="text-white">enterprises.</b> I&apos;m a team player,
-          passionate about making sure every project is a real game-changer.
-        </p>
-        <p className="mt-4 text-secondary">
-          Currently, I&apos;m part of the E.on energy owned brands{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://essent.nl"
-            className="text-orange-accent font-semibold"
-          >
-            Essent
-          </a>{" "}
-          &{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://energiedirect.nl"
-            className="text-orange-accent font-semibold"
-          >
-            Energie direct
-          </a>{" "}
-          where I lead and develop their mobile applications for the benefit of
-          over 1 million customers.
-          <b className="text-orange-accent underline underline-offset-4 hover:cursor-pointer"></b>
-        </p>
-        <div className="hidden md:block shadow-2xl shadow-black absolute opacity-30 rounded-full top-[-2vh] right-[-20vw] w-[40vw] h-[40vw] bg-center bg-[url('/images/Dermot_Logo.png')] z-[-1]" />
-      </section>
-      {/* <CalendlyPopUp /> */}
+    <main className="min-h-screen flex items-center">
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-16 py-20 md:py-0">
+        <div className="grid md:grid-cols-[1.1fr_1fr] gap-10 md:gap-20 items-center">
+
+          {/* Typography */}
+          <div>
+            <p className="text-xs tracking-[0.25em] uppercase text-stone mb-8">
+              Software Engineer &amp; Tech Lead
+            </p>
+
+            <h1 className="text-7xl md:text-[6.5rem] font-bold text-charcoal leading-[0.85] tracking-tight">
+              Dermot
+              <br />
+              Boyle
+            </h1>
+
+            {/* Terracotta rule */}
+            <div className="w-14 h-0.5 bg-terracotta mt-8 mb-8" />
+
+            <p className="text-lg md:text-xl text-stone leading-relaxed max-w-lg">
+              Once a music teacher. Now a tech lead shipping web
+              and mobile products to millions — from Málaga, Spain.
+            </p>
+
+            <div className="mt-10 flex items-center gap-8">
+              <a
+                href="https://essent.nl"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="group flex items-center gap-3"
+              >
+                <span className="flex items-center justify-center w-9 h-9 rounded-full bg-white shadow-sm">
+                  <Image
+                    src="/images/essent-logo.png"
+                    alt=""
+                    width={18}
+                    height={18}
+                  />
+                </span>
+                <span>
+                  <span className="block text-sm font-medium text-charcoal-soft group-hover:text-terracotta transition-colors">
+                    Essent
+                  </span>
+                  <span className="block text-[0.65rem] tracking-[0.15em] uppercase text-stone">
+                    Current
+                  </span>
+                </span>
+              </a>
+
+              <a
+                href="https://adidas.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="group flex items-center gap-3"
+              >
+                <span className="flex items-center justify-center w-9 h-9 rounded-full bg-white shadow-sm">
+                  <Image
+                    src="/images/adidas-logo.png"
+                    alt=""
+                    width={18}
+                    height={18}
+                  />
+                </span>
+                <span>
+                  <span className="block text-sm font-medium text-charcoal-soft group-hover:text-terracotta transition-colors">
+                    adidas
+                  </span>
+                  <span className="block text-[0.65rem] tracking-[0.15em] uppercase text-stone">
+                    Previously
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          {/* Photo */}
+          <div className="relative order-first md:order-last">
+            <div className="relative aspect-square w-full max-w-lg mx-auto md:ml-auto md:mr-0 overflow-hidden">
+              <Image
+                src="/images/me.png"
+                alt="Dermot Boyle working from a terrace in southern Spain"
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 768px) 90vw, 40vw"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
     </main>
   );
 }

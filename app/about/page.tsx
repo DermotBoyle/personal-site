@@ -57,7 +57,7 @@ const AboutPage = () => {
                 Promoted to Tech Lead (June 2025)
               </p>
               <p className="text-sm">
-                Tech lead of the mobile platform team at Essent, the Netherlands' largest energy provider, overseeing customer-facing apps used by millions of households.
+                Tech lead of the mobile platform team at Essent, the Netherlands&apos; largest energy provider, overseeing customer-facing apps used by millions of households.
               </p>
               <p className="text-sm">
                 Transitioned the mobile team from a single delivery squad into a platform team supporting multiple Agile Release Trains.

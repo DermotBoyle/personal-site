@@ -3,7 +3,7 @@ const getProjectBriefs = () =>
 		{
 			title: 'Talk Tarot',
 			information: 'An AI-powered voice tarot reading app with conversational card interpretation',
-			techUsed: [ 'React Native', 'Expo', 'TypeScript', 'Claude AI', 'Deepgram', 'OpenAI TTS', 'Supabase' ],
+			techUsed: [ 'React Native', 'Expo', 'TypeScript', 'Claude AI', 'Deepgram', 'OpenAI TTS', 'Supabase', 'RevenueCat', 'Sentry' ],
 			link: '/projects/talk-tarot'
 		},
 		{

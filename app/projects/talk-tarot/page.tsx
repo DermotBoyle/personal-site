@@ -47,10 +47,12 @@ const TalkTarotPage = () => {
               <p>OpenAI TTS</p>
               <p>Supabase</p>
               <p>Reanimated</p>
+              <p>RevenueCat</p>
+              <p>Sentry</p>
             </div>
             <p className="md:hidden">
               React Native, Expo, TypeScript, Claude AI, Deepgram, OpenAI TTS,
-              Supabase, Reanimated
+              Supabase, Reanimated, RevenueCat, Sentry
             </p>
           </div>
 
@@ -94,13 +96,18 @@ const TalkTarotPage = () => {
             spoken aloud using OpenAI&apos;s TTS API. The backend is built
             entirely with Supabase Edge Functions.
           </p>
+          <p className="mt-4">
+            Monetisation is handled through RevenueCat, managing in-app
+            subscriptions across iOS and Android. Sentry provides observability
+            with error tracking and performance monitoring across the full stack.
+          </p>
         </div>
       </section>
 
       <div className="w-[70vw] mt-8 md:mt-0 pb-6">
         <h3 className="text-xl font-bold">Previews</h3>
       </div>
-      <section className="w-[95vw] grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 sm:px-2 md:w-[70vw]">
+      <section className="w-[95vw] grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 sm:px-2 md:w-[70vw]">
         <div className="aspect-9/16 border-2 border-charcoal/10 rounded-md border-solid relative overflow-hidden">
           <Image
             src="/images/talk-tarot/talk-tarot-spread-selection.png"
@@ -129,6 +136,22 @@ const TalkTarotPage = () => {
           <Image
             src="/images/talk-tarot/talk-tarot-ai-reading.png"
             alt="Talk Tarot AI reading conversation"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="aspect-9/16 border-2 border-charcoal/10 rounded-md border-solid relative overflow-hidden">
+          <Image
+            src="/images/talk-tarot/talk-tarot-subscription.png"
+            alt="Talk Tarot subscription screen"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="aspect-9/16 border-2 border-charcoal/10 rounded-md border-solid relative overflow-hidden">
+          <Image
+            src="/images/talk-tarot/talk-tarot-subscription-apple.webp"
+            alt="Talk Tarot Apple subscription confirmation"
             fill
             className="object-cover"
           />

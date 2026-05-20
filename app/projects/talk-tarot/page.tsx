@@ -185,7 +185,7 @@ const TalkTarotPage = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://github.com/DermotBoyle"
+              href="https://github.com/DermotBoyle/Talk-Tarot-Showcase"
             >
               <GitHubLogo />
             </a>

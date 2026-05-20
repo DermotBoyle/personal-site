@@ -23,7 +23,7 @@ export default function Home() {
 
             <p className="text-lg md:text-xl text-stone leading-relaxed max-w-lg">
               Once a music teacher. Now a tech lead shipping web
-              and mobile products to millions — from Málaga, Spain.
+              and mobile products to millions.
             </p>
 
             <div className="mt-10 flex items-center gap-8">

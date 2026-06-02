@@ -70,7 +70,7 @@ const TalkTarotPage = () => {
               <h3 className="text-xl font-bold">Status</h3>
             </div>
             <div className="flex">
-              <p className="self-end">In progress</p>
+              <p className="self-end">Concluded - 2026</p>
             </div>
           </div>
         </div>
@@ -175,6 +175,11 @@ const TalkTarotPage = () => {
           in a reading, allowing the AI to weave earlier interpretations into
           later ones. A hold-to-talk interface with pulsing animations keeps the
           voice interaction feeling natural and intuitive.
+        </p>
+        <p className="mt-4">
+          Fun footnote: Apple&apos;s App Store review flagged Talk Tarot as spam
+          and rejected it &mdash; apparently the cards didn&apos;t see that one
+          coming either. The full codebase lives on GitHub below.
         </p>
       </section>
 

@@ -66,7 +66,7 @@ const GoyaTwitterBot = () => {
               <h3 className="text-xl font-bold">Status</h3>
             </div>
             <div className="flex">
-              <p className="self-end">Active - 2023</p>
+              <p className="self-end">Concluded - 2023</p>
             </div>
           </div>
         </div>

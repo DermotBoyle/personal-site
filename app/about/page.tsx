@@ -4,7 +4,17 @@ import { useEffect } from "react";
 
 const experience = [
   {
-    period: "2024 — 2025",
+    period: "2026 — Present",
+    role: "Product Builder",
+    company: "BizAway",
+    companyUrl: "https://bizaway.com",
+    location: "Remote (Spain)",
+    type: "Perm",
+    summary:
+      "One person, the whole product. I take features from first sketch to shipped — designing the experience, building the client and wiring up the backend — with AI agents working alongside me at every step. Fewer handoffs, tighter feedback loops, and more time spent on the problems business travellers actually have.",
+  },
+  {
+    period: "2024 — 2026",
     role: "Tech Lead & Senior Mobile Developer",
     company: "Essent & Energie Direct",
     companyUrl: "https://essent.nl",
@@ -58,6 +68,9 @@ const experience = [
 ];
 
 const skills = [
+  "Product Building",
+  "AI-Assisted Development",
+  "Product Design",
   "Technical Leadership",
   "React Native",
   "TypeScript",
@@ -110,10 +123,15 @@ const AboutPage = () => {
           <p className="text-lg md:text-xl text-stone leading-relaxed max-w-2xl">
             I started my career in a music classroom. A bachelor&apos;s in music
             led to teaching, but curiosity pulled me toward code. Over the past
-            six years, I&apos;ve built products at early-stage startups, led
-            engineering at adidas, and now oversee mobile development at
-            Essent — shipping apps to millions of households across the
-            Netherlands.
+            seven years, I&apos;ve built products at early-stage startups, led
+            engineering at adidas, and headed up mobile at Essent —
+            shipping apps to millions of households across the Netherlands.
+          </p>
+          <p className="text-lg md:text-xl text-stone leading-relaxed max-w-2xl mt-4">
+            Now I&apos;m a product builder at BizAway. Design, client, backend
+            — I own the whole piece, with AI as my rhythm section. It&apos;s the
+            closest engineering has ever felt to music: hearing the full song,
+            not just your part.
           </p>
           <p className="text-lg md:text-xl text-stone leading-relaxed max-w-2xl mt-4">
             I live in Málaga, Spain, where I split my time between engineering

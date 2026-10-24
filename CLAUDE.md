@@ -4,7 +4,7 @@
 
 Personal portfolio site for Dermot — senior React Native/TypeScript developer, team lead, former music teacher turned software engineer, flamenco guitar student, based in Malaga, Spain.
 
-This site should tell a story, not just list credentials. Dermot's career arc — from music education to leading mobile development at companies like Essent and adidas — is the narrative thread.
+This site should tell a story, not just list credentials. Dermot's career arc — from music education to leading mobile development at companies like Essent and adidas, and now building whole products end to end at BizAway — is the narrative thread.
 
 ## Stack
 
@@ -66,12 +66,13 @@ Think golden hour in Malaga — warm terracotta, aged white walls, deep Mediterr
 - Subtle warm background texture
 
 ### About / Story
-- The career arc: music education → teaching → software engineering → tech leadership → Malaga
+- The career arc: music education → teaching → software engineering → tech leadership → product building → Malaga
 - Written like an editorial profile piece, not a LinkedIn summary
 - This is the heart of the site
 
 ### Work & Experience
-- Essent (current) — mobile app team lead, React Native, accessibility
+- BizAway (current) — product builder: design, client and backend, built with AI
+- Essent — mobile app team lead, React Native, accessibility
 - adidas — enterprise-scale applications
 - Present as curated highlights, not an exhaustive CV
 - Magazine-style layout: project cards or editorial spreads

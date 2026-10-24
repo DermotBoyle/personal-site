@@ -9,7 +9,7 @@ export default function Home() {
           {/* Typography */}
           <div>
             <p className="text-xs tracking-[0.25em] uppercase text-stone mb-8">
-              Software Engineer &amp; Tech Lead
+              Product Builder &amp; Engineer
             </p>
 
             <h1 className="text-7xl md:text-[6.5rem] font-bold text-charcoal leading-[0.85] tracking-tight">
@@ -22,11 +22,35 @@ export default function Home() {
             <div className="w-14 h-0.5 bg-terracotta mt-8 mb-8" />
 
             <p className="text-lg md:text-xl text-stone leading-relaxed max-w-lg">
-              Once a music teacher. Now a tech lead shipping web
-              and mobile products to millions.
+              Once a music teacher. Now a product builder taking ideas
+              from sketch to shipped — design, client and backend.
             </p>
 
             <div className="mt-10 flex items-center gap-8">
+              <a
+                href="https://bizaway.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="group flex items-center gap-3"
+              >
+                <span className="flex items-center justify-center w-9 h-9 rounded-full bg-white shadow-sm">
+                  <Image
+                    src="/images/bizaway-logo.svg"
+                    alt=""
+                    width={18}
+                    height={18}
+                  />
+                </span>
+                <span>
+                  <span className="block text-sm font-medium text-charcoal-soft group-hover:text-terracotta transition-colors">
+                    BizAway
+                  </span>
+                  <span className="block text-[0.65rem] tracking-[0.15em] uppercase text-stone">
+                    Current
+                  </span>
+                </span>
+              </a>
+
               <a
                 href="https://essent.nl"
                 target="_blank"
@@ -44,30 +68,6 @@ export default function Home() {
                 <span>
                   <span className="block text-sm font-medium text-charcoal-soft group-hover:text-terracotta transition-colors">
                     Essent
-                  </span>
-                  <span className="block text-[0.65rem] tracking-[0.15em] uppercase text-stone">
-                    Current
-                  </span>
-                </span>
-              </a>
-
-              <a
-                href="https://adidas.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="group flex items-center gap-3"
-              >
-                <span className="flex items-center justify-center w-9 h-9 rounded-full bg-white shadow-sm">
-                  <Image
-                    src="/images/adidas-logo.png"
-                    alt=""
-                    width={18}
-                    height={18}
-                  />
-                </span>
-                <span>
-                  <span className="block text-sm font-medium text-charcoal-soft group-hover:text-terracotta transition-colors">
-                    adidas
                   </span>
                   <span className="block text-[0.65rem] tracking-[0.15em] uppercase text-stone">
                     Previously
